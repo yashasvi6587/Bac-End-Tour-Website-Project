@@ -1,0 +1,23 @@
+extends base.pug
+
+//- block scripts 
+//-     script(src="script.js") 
+
+block style 
+    style 
+        include ../static/styleservices.css 
+        include ../static/style.css 
+
+block content
+    section#section3
+        h1 Find your Calm Now 
+        h2 Our goal is to help to improve to your
+        h2.cls health and happiness
+        h3 Fill this form for registration 
+        form(action="/Services",method="post",class="class") 
+            input(type="text",name="name",placeholder="Enter your name") 
+            input(type="email",name="email",placeholder="Enter your email") 
+            input(type="number",name="number",placeholder="Enter your number") 
+            input(type="text",name="gender",placeholder="Enter your gender") 
+            button
+                | Submit Now 
