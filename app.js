@@ -36,7 +36,7 @@ app.get("/Services",(req,res)=>{
 app.post("/Services",(req,res)=>{
     var myData=new Contact(req.body)
     myData.save().then(()=>{
-        res.send("This item has been saved suuccessfully")
+        res.send("Congratulations! Your form has been submitted successfully")
     }).catch(()=>{
         res.status(404).send("Page not found")
     })
